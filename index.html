@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastelado</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+   <header>    
+    <nav>
+        <div class="logo">
+           <h2>Rastelado</h2>    
+        </div>
+        <input id="dropdown" class="input-box" type="checkbox" style="display:none;">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#photo">Fotos</a>
+                </li>
+                <li>
+                    <a href="#estimate">Orçamento</a>
+                </li>             
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bt-menu">          
+          
+            <label for="dropdown" class="dropdown">               
+                <span class="hamburger">
+                <span class="icon-bar top-bar"></span>
+               <span class="icon-bar middle-bar"></span>
+               <span class="icon-bar bottom-bar"></span>
+                 </span>
+               </label>    
+
+        </div>
+       </nav>
+           
+   </header>
+    <main>
+        <section class="wrapper-picture" id="photo">
+      
+            <section class="image-p"><img src="./image/tatuagem.jpg" alt="" srcset=""></section>
+            <section class="image-m">
+            <img src="./image/image2.jpg" alt="" srcset="">
+            <img src="./image/image3.jpg" alt="" srcset="">
+            <img src="./image/image4.jpg" alt="" srcset="">
+            <img src="./image/image5.jpg" alt="" srcset="">
+            <img src="./image/image6.jpg" alt="" srcset="">
+            <img src="./image/image7.jpg" alt="" srcset="">
+            </section>    
+        </section>
+        <section class="estimate" id="estimate">
+            <h1>Faça o orçamento de sua tatuagem</h1>
+            <form action="">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+                <label for="photo">Foto da Tatuagem:</label>
+                <input type="file" name="photo" id="photo">
+                <button>Enviar </button>
+            </form>
+        </section>
+
+        <section class="contact" id="contact">        
+            <section class="social">
+               <div>
+                   <img src="./image/facebook.png" alt="facebook">
+                   <p>Facebook/Rastelado</p>
+            </div>
+               <div><img src="./image/instagram.png" alt="facebook">
+                <p>@Rastelado</p>
+            </div>
+
+            <div><img src="./image/google.png" alt="facebook">
+                <p>@Rastelado</p>
+            </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            Rastelado.com
+        </div>
+    </footer>
+</body>
+</html>

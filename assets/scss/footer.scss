@@ -1,0 +1,25 @@
+  
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-black;
+    height: 30vh;
+
+    @media screen and (max-width: 700px) {
+        justify-content: center;
+    
+    }
+
+    .footer{
+        padding: 50px;
+        color: $color-tertiary;
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
+
+
+
+
+

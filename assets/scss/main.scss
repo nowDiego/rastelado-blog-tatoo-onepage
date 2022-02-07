@@ -1,0 +1,144 @@
+main{     
+    margin-top:0;  
+  
+  .wrapper-picture{   
+    background-image:  radial-gradient(circle at 12.5% 12.5%, #6f6584 0, #5a546a 25%, #464350 50%, #333237 75%, #222320 100%);
+    display: grid;
+    grid-template-columns: 800px auto ;
+    grid-template-rows: auto; 
+    grid-template-areas:
+        "image-p image-m "    
+
+    ;
+
+    @media screen and (max-width: 700px) {
+      
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto;     
+        grid-template-areas:
+            "image-p"
+            "image-m"    
+    
+        ;
+      }
+
+      
+  }
+
+  .image-p{
+      grid-area: image-p;
+      width: 800px;
+      height: 610px;
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        height: 50vh;
+    }
+
+      img{          
+          width: 100%;
+          height: 100%;         
+      }
+  }
+
+  .image-m{
+      grid-area: image-m;   
+        display: flex;
+         flex-wrap: wrap;       
+
+      img{
+        width: 50%;
+        height: 202px;
+
+        @media screen and (max-width: 700px) {
+            width: 50vw;
+        }
+      
+      }
+
+  }
+
+  .estimate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;  
+   background-color: $bg-black;
+    padding: 40px;
+
+    h1{
+       font-size: 40px; 
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        label{
+            font-size: 22px;
+            margin-top:5px ;
+            margin-bottom:5px ;
+        }
+        input{
+           
+            width: 40vw;
+            height: 40px;
+            border: none;
+        }
+       button{
+        height: 40px;
+        background-color: $color-tertiary;
+        border: none;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+        
+       }
+    }
+  }
+
+  .contact{
+    display: flex;  
+    align-items: center;
+    color: $color-black;   
+    padding: 40px;
+    height: 50vh;
+    background-image: linear-gradient(100deg, #fffffb 0, #fffff6 12.5%, #fff4ee 25%, #ffe6e4 37.5%, #e8d7d7 50%, #cec8c9 62.5%, #b7bbbb 75%, #a4b0ad 87.5%, #94a6a1 100%);
+
+    @media screen and (max-width: 700px) {
+        height: 100%;
+    }
+
+.social{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div{
+        margin:30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            padding-top: 10px;   
+        }
+    }
+
+    img{       
+        width: 70px;
+        height: 60px;
+    }
+}
+    
+
+  }
+
+
+}
